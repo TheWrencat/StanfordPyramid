@@ -1,0 +1,17 @@
+int BRICK_WIDTH = 30;
+int BRICK_HEIGHT = 12;
+int BRICK_COUNT = 14;
+int BRICKS_IN_BASE = 14;
+int CANVAS_HEIGHT = 500;
+int CANVAS_WIDTH = 500;
+int STARTING_X = CANVAS_WIDTH / BRICK_COUNT;
+int STARTING_Y = CANVAS_HEIGHT - BRICK_HEIGHT;
+
+void setup(){
+  size(500, 500);
+}
+void draw(){
+  for(int i = 0; i<BRICK_COUNT; i++){
+  rect(STARTING_X+(i*30), STARTING_Y, BRICK_WIDTH, BRICK_HEIGHT);
+  }
+}
