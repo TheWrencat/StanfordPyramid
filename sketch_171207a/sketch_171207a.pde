@@ -4,7 +4,7 @@ int BRICK_COUNT = 14;
 int BRICKS_IN_BASE = 14;
 int CANVAS_HEIGHT = 500;
 int CANVAS_WIDTH = 500;
-int STARTING_X = CANVAS_WIDTH / BRICK_COUNT;
+int STARTING_X = CANVAS_WIDTH / 2 - ((BRICKS_IN_BASE / 2) * BRICK_WIDTH);
 int STARTING_Y = CANVAS_HEIGHT - BRICK_HEIGHT;
 
 void setup(){
@@ -12,6 +12,6 @@ void setup(){
 }
 void draw(){
   for(int i = 0; i<BRICK_COUNT; i++){
-  rect(STARTING_X+(i*30), STARTING_Y, BRICK_WIDTH, BRICK_HEIGHT);
+  rect(STARTING_X+(i*BRICK_WIDTH), STARTING_Y, BRICK_WIDTH, BRICK_HEIGHT);
   }
-}
+} 
